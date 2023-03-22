@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    left: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    
+    background: linear-gradient(#6b1de7,#1f4fb6);
+}
+nav
+{
+    position: relative;
+    left: 15%;
+    justify-content: center;
+
+}
+.navbar-brand 
+{
+    position:absolute;
+    margin-left: 30px;
+}
+.collapse
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#cen
+{
+    margin-top: 30px;
+    color: #fff;
+}
+#nav-col>a
+{
+    color: #fff;
+}
+#nav-col>button
+{
+    border: 2px solid white;
+    color: #fff;
+}
+.container
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;    
+} 
+#fly
+{
+    color: #fff;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.container p
+{
+    word-spacing: 4px;
+    margin-left: 100px;
+    color: #ffff;
+}
+#btn
+{
+    
+    margin-left: 100px;
+    background-color: green;
+    color: #ffff;
+    width: 120px;
+    height: 40px;
+    font-size: 1.4vw;
+    text-align: center;
+    border-radius: 15px;
+    border-style: none;
+
+}
+#btn:hover
+{
+    
+    border: 2px  gray;
+    transition: all 0.5s ease;
+    box-shadow: 2px 1px 5px 2px black;
+    transform:  scale(1.005) ;
+}
+.card
+{
+    position: absolute;
+    align-items: center;
+    justify-content: top;
+    width: 350px;
+    height: 350px;
+    margin-left: 70px;
+    padding: 12px 30px;
+    border-radius: 15px;
+}
+.card:hover{
+    border: 2px  gray;
+    transition: all 0.5s ease;
+    box-shadow: 2px 1px 5px 2px black;
+    transform:  scale(1.005) ;
+}
+.card.active
+{
+    box-shadow: 1px 1px 10px 1px black;
+}
+.card input
+{
+    border-style: none;
+    width: 300px;
+    height: 30px;
+    padding: 18px;
+    background-color:gainsboro;
+    margin-bottom: 12px;
+    align-items: center;
+}
+.card input:hover
+{
+    border: 2px  gray;
+    transition: 0.5s;
+    box-shadow: 2px 1px 5px 2px black;
+
+}
+.form select
+{
+    color: teal;
+    width: 300px;
+    height:30px;
+    padding: 2px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    background-color: gainsboro;
+    border-style: none;
+}
+.form select:hover
+{
+    border: 2px  gray;
+    transition: 0.5s;
+    box-shadow: 2px 1px 5px 2px black;
+    
+}
+.card h1
+{
+    font-weight: 20;
+    font-size: 30;
+}
+#register_btn
+{
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 12px;
+    width: 300px;
+    height: 40px;
+    text-align: center;   
+}
+#register_btn:hover
+{
+    border: 2px  gray;
+    transition:  0.5s ;
+    box-shadow: 2px 1px 5px 2px black;
+      
+}
+.links{
+    position: relative;
+}
+.links::after
+{
+    content:'';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    color:#fff;
+    background-color:white;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;   
+}
+.links:hover::after{
+    color: white;
+    transform: scaleX(1);
+    transform-origin: center;
+}
